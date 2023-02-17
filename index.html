@@ -14,11 +14,6 @@
       display: block;
       font-family: 'Source Sans Pro', sans-serif;
     }
-    @media screen and (min-width: 480px) {
-      body {
-        background-color: #8FBC8F;
-        }
-      }
     .col-1{width: 8.33%;}
     .col-2{width: 16.66%;}
     .col-3{width: 25%;}
@@ -58,6 +53,14 @@
     body{
       background-color: #3CB371;
     }
+    @media only screen and (min-width: 480px) {
+      [class*="col-"] {
+        width: 100%;
+      }
+      body {
+        background-color: #8FBC8F;
+        }
+      }
   </style>
   </head>
   <body>
